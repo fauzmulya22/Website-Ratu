@@ -1,68 +1,40 @@
-/* Media Queries untuk Layar Tablet dan Mobile */
 @media screen and (max-width: 992px) {
     .split-layout {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 30px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2.2rem;
+    /* Navbar Mobile */
+    .hamburger { display: block; }
+    .hamburger.active .bar:nth-child(2) { opacity: 0; }
+    .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    .nav-menu {
+        position: fixed; left: -100%; top: 70px; flex-direction: column;
+        background-color: var(--white); width: 100%; text-align: center;
+        transition: 0.3s; box-shadow: 0 10px 10px rgba(0,0,0,0.1); padding: 20px 0;
     }
+    .nav-menu.active { left: 0; }
+    .nav-menu li { margin: 15px 0; }
+
+    /* Grid Layout Mobile */
+    .card-grid { grid-template-columns: 1fr; }
+    .prodi-grid { grid-template-columns: 1fr; } /* Kartu Prodi memanjang di HP */
+
+    /* Typography di HP */
+    .hero-content h1 { font-size: 2rem; }
+    .section-title { font-size: 1.8rem; }
+    .tefa-desc { font-size: 1rem; padding: 0 15px; }
     
-    .hero-content .subtitle {
-        font-size: 1rem;
-    }
-
-    .section-title {
-        font-size: 1.8rem;
-        margin-bottom: 30px;
-    }
-
-    /* Mengubah Grid menjadi satu kolom vertikal di HP */
-    .card-grid, 
-    .collab-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .feature-list {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .feature-item {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .impact-roadmap-section {
-        padding: 60px 0;
-    }
-
-    .footer-section h2 {
-        font-size: 1.5rem;
-    }
-    
-    .footer-section p {
-        font-size: 1rem;
-        padding: 0 15px;
-    }
+    /* Tabel TEFA Mobile (Bisa Scroll Kanan-Kiri) */
+    .tefa-table th, .tefa-table td { font-size: 0.9rem; padding: 10px; }
+    .table-responsive { border-right: 2px solid rgba(0, 91, 63, 0.1); }
 }
 
 @media screen and (max-width: 480px) {
-    .hero-section {
-        padding: 60px 0;
-    }
-    
-    .btn-primary {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .profile-badge {
-        width: 100%;
-        text-align: left;
-    }
+    .hero-section { padding: 60px 0; }
+    .btn-primary { width: 100%; text-align: center; }
 }
