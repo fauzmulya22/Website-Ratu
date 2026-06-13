@@ -3,118 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polinela Career Path Finder</title>
+    <title>Polinela Career Path Finder & TEFA</title>
     <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#beranda" class="nav-logo">Polinela<span>Career</span></a>
+            <ul class="nav-menu">
+                <li><a href="#latar-belakang">Latar Belakang</a></li>
+                <li><a href="#blu">Sistem BLU</a></li>
+                <li><a href="#prodi">Profil Prodi</a></li>
+                <li><a href="#info-tefa">Apa itu TEFA?</a></li>
+                <li><a href="#jenis-tefa">Jenis TEFA</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
     <header class="hero-section" id="beranda">
         <div class="container hero-content">
-            <h1>Polinela Career Path Finder</h1>
-            <p class="subtitle">Strategi Digitalisasi Informasi Prodi untuk Meningkatkan Kualitas Calon Mahasiswa Baru</p>
+            <h1>Polinela BLU Gateway</h1>
+            <p class="subtitle">Strategi Digitalisasi Informasi Prodi & Integrasi Teaching Factory (TEFA) untuk Calon Mahasiswa Baru</p>
             <div class="profile-badge">
-                <span class="name">Ratu</span>
-                <span class="role">Kandidat Duta Bisnis & Kewirausahaan</span>
+                <span class="name">Kandidat Duta Bisnis & Kewirausahaan</span>
             </div>
-            <a href="#solusi" class="btn-primary">Lihat Inovasi</a>
+            <a href="#prodi" class="btn-primary">Jelajahi Prodi & TEFA</a>
         </div>
     </header>
 
+    <!-- Latar Belakang -->
     <section class="problem-section" id="latar-belakang">
         <div class="container">
-            <h2 class="section-title">Latar Belakang</h2>
+            <h2 class="section-title">Latar Belakang & Solusi</h2>
             <div class="card-grid">
                 <div class="card">
                     <h3>😕 Kebingungan Maba</h3>
-                    <p>Banyak calon mahasiswa baru yang bingung mengenai prospek kerja nyata tiap program studi.</p>
+                    <p>Calon mahasiswa bingung mengenai prospek kerja nyata tiap program studi vokasi.</p>
                 </div>
                 <div class="card">
-                    <h3>흩 Data Tersebar</h3>
-                    <p>Informasi alumni dan kesuksesan lulusan masih tersebar dan kurang terpusat di satu platform.</p>
+                    <h3>🏭 Kurangnya Info Industri</h3>
+                    <p>Fasilitas kelas industri (TEFA) kampus belum terekspos maksimal sebagai daya tarik Maba.</p>
                 </div>
                 <div class="card">
-                    <h3>📊 Data-Driven</h3>
-                    <p>Pentingnya pendekatan <em>"Data-Driven Decision"</em> dalam memilih jurusan bagi calon mahasiswa.</p>
+                    <h3>💡 Solusi: Digital Directory</h3>
+                    <p>Platform <em>One-Stop Directory</em> yang menghubungkan Profil Prodi, Peta Karir, dan Ekosistem BLU-TEFA Polinela.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="solution-section" id="solusi">
-        <div class="container">
-            <h2 class="section-title text-white">One-Stop Digital Directory</h2>
-            <p class="section-desc text-white">Sebuah web-app interaktif yang menyajikan informasi secara terpusat:</p>
-            <div class="feature-list">
-                <div class="feature-item">
-                    <span class="feature-icon">📑</span>
-                    <h4>Profil Prodi Ringkas</h4>
-                </div>
-                <div class="feature-item">
-                    <span class="feature-icon">🗺️</span>
-                    <h4>Peta Karir & Profesi</h4>
-                </div>
-                <div class="feature-item">
-                    <span class="feature-icon">🏆</span>
-                    <h4>Success Stories Alumni</h4>
-                </div>
-            </div>
-            <div class="value-prop">
-                <strong>Value:</strong> Informatif, transparan, dan mudah diakses melalui QR Code.
-            </div>
-        </div>
-    </section>
-
-    <section class="collaboration-section" id="kolaborasi">
-        <div class="container">
-            <h2 class="section-title">Sinergi dengan Humas Polinela</h2>
-            <p class="narrative">"Duta Bisnis bertindak sebagai pengembang sistem, Humas bertindak sebagai kurator dan penyebar informasi."</p>
-            <div class="collab-grid">
-                <div class="collab-item">
-                    <h4>✅ Validasi Data</h4>
-                    <p>Humas membantu memverifikasi data profil alumni agar tetap akurat dan representatif.</p>
-                </div>
-                <div class="collab-item">
-                    <h4>📢 Publikasi Resmi</h4>
-                    <p>Integrasi link web di platform resmi Humas (Website Kampus/Instagram Kampus).</p>
-                </div>
-                <div class="collab-item">
-                    <h4>🎨 Branding</h4>
-                    <p>Memastikan tampilan web sesuai dengan guideline visual resmi Polinela.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="impact-roadmap-section" id="roadmap">
+    <!-- Pengenalan BLU -->
+    <section class="blu-section" id="blu">
         <div class="container split-layout">
-            <div class="impact-content">
-                <h2 class="section-title left-align">Keunggulan Program</h2>
+            <div>
+                <h2 class="section-title left-align">Ekosistem BLU Polinela</h2>
+                <h3>Apa itu BLU?</h3>
+                <p>Badan Layanan Umum (BLU) memberikan fleksibilitas kepada Polinela untuk mengelola pendapatan dari layanan pendidikan, pelatihan, riset, dan produksi, untuk diputar kembali demi peningkatan kualitas layanan institusi.</p>
+            </div>
+            <div class="impact-box">
+                <h3>Manfaat BLU bagi Mahasiswa:</h3>
                 <ul class="impact-list">
-                    <li><strong>Sustainable:</strong> Data dapat terus diperbarui kapan saja (tidak sekali pakai).</li>
-                    <li><strong>Mandiri:</strong> Hemat biaya pengembangan web karena berbasis <em>low-code/no-code</em>.</li>
-                    <li><strong>Branding Polinela Jaya:</strong> Menunjukkan Polinela sebagai kampus yang melek digital dan transparan soal karir lulusannya.</li>
+                    <li>Fasilitas praktik lebih lengkap & berstandar industri.</li>
+                    <li>Mendukung pembelajaran berbasis industri nyata.</li>
+                    <li>Membuka peluang magang dan proyek riil.</li>
+                    <li>Meningkatkan kompetensi kerja sebelum lulus.</li>
+                    <li>Mendukung program kewirausahaan mahasiswa.</li>
                 </ul>
             </div>
-            <div class="roadmap-content">
-                <h2 class="section-title left-align">Roadmap Kerja</h2>
-                <div class="timeline">
-                    <div class="timeline-item"><strong>Minggu 1:</strong> Pengumpulan data prodi & koordinasi Humas.</div>
-                    <div class="timeline-item"><strong>Minggu 2:</strong> Pembangunan struktur web directory.</div>
-                    <div class="timeline-item"><strong>Minggu 3:</strong> Review konten bersama pihak Humas.</div>
-                    <div class="timeline-item"><strong>Minggu 4:</strong> Launching & penyebaran QR Code.</div>
+        </div>
+    </section>
+
+    <!-- Penjelasan Prodi (MENU BARU) -->
+    <section class="prodi-section" id="prodi">
+        <div class="container">
+            <h2 class="section-title">Program Studi Terhubung BLU & TEFA</h2>
+            <p class="section-desc">Hampir seluruh program studi vokasi di Polinela terlibat dalam aktivitas BLU melalui unit usaha dan Teaching Factory. Berikut adalah fokus keilmuannya:</p>
+            
+            <div class="prodi-grid">
+                <div class="prodi-card">
+                    <h4>💻 Teknologi Rekayasa Perangkat Lunak (TRPL)</h4>
+                    <p>Berfokus pada pengembangan perangkat lunak, website, aplikasi mobile, sistem informasi, kecerdasan buatan (AI), dan teknologi digital melalui <em>project-based learning</em>.</p>
+                </div>
+                <div class="prodi-card">
+                    <h4>📊 Manajemen Informatika (MI)</h4>
+                    <p>Berfokus pada pengelolaan data, pengembangan sistem informasi, administrasi jaringan komputer, dan teknologi informasi untuk bisnis.</p>
+                </div>
+                <div class="prodi-card">
+                    <h4>🧪 Teknologi Rekayasa Kimia Industri (TRKI)</h4>
+                    <p>Berfokus pada proses produksi industri kimia, pengolahan bahan baku, pengendalian mutu, keselamatan kerja, dan efisiensi industri.</p>
+                </div>
+                <div class="prodi-card">
+                    <h4>📦 Pengembangan Produk Agroindustri</h4>
+                    <p>Berfokus pada inovasi dan pengembangan produk hasil pertanian menjadi produk bernilai tambah tinggi yang siap dipasarkan.</p>
+                </div>
+                <div class="prodi-card">
+                    <h4>🥫 Teknologi Pangan</h4>
+                    <p>Berfokus pada pengolahan pangan, keamanan pangan, pengemasan produk, serta pengembangan produk makanan dan minuman.</p>
+                </div>
+                <div class="prodi-card">
+                    <h4>📈 Agribisnis</h4>
+                    <p>Berfokus pada manajemen usaha pertanian, pemasaran produk pertanian, kewirausahaan, dan pengembangan bisnis agroindustri.</p>
+                </div>
+                <div class="prodi-card">
+                    <h4>🌴 Manajemen Industri Perkebunan (PMIP)</h4>
+                    <p>Berfokus pada pengelolaan perkebunan modern, manajemen produksi, pengolahan hasil perkebunan, dan bisnis perkebunan berkelanjutan.</p>
+                </div>
+                <div class="prodi-card">
+                    <h4>🐄 Teknologi Produksi Ternak</h4>
+                    <p>Berfokus pada budidaya ternak, manajemen pakan, reproduksi ternak, dan pengelolaan usaha peternakan modern.</p>
+                </div>
+                <div class="prodi-card">
+                    <h4>🍎 Produksi Tanaman Hortikultura</h4>
+                    <p>Berfokus pada produksi buah, sayuran, tanaman hias, serta teknologi budidaya hortikultura modern secara komprehensif.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Apa itu TEFA (MENU BARU) -->
+    <section class="info-tefa-section" id="info-tefa">
+        <div class="container text-center">
+            <h2 class="section-title text-white">Apa itu Teaching Factory (TEFA)?</h2>
+            <p class="tefa-desc text-white">
+                Teaching Factory (TEFA) adalah model pembelajaran yang menggabungkan proses belajar dengan proses produksi atau layanan nyata. Mahasiswa belajar seperti bekerja di industri sesungguhnya, bukan sekadar simulasi, melainkan menghasilkan produk atau jasa nyata yang digunakan oleh masyarakat maupun dunia industri.
+            </p>
+        </div>
+    </section>
+
+    <!-- Jenis Jenis TEFA Tabel -->
+    <section class="tefa-section" id="jenis-tefa">
+        <div class="container">
+            <h2 class="section-title">Jenis-jenis TEFA Polinela</h2>
+            <p style="text-align: center; margin-bottom: 30px;">Saat ini Polinela memiliki lebih dari 33 Teaching Factory (TEFA) yang menjadi sarana pembelajaran sekaligus unit produksi. Berikut 11 TEFA unggulannya:</p>
+            
+            <div class="table-responsive">
+                <table class="tefa-table">
+                    <thead>
+                        <tr>
+                            <th>Nama TEFA</th>
+                            <th>Prodi Pendukung</th>
+                            <th>Fokus Bidang & Produk</th>
+                            <th>Keunggulan / Nilai BLU</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Agri Techno Park (ATP)</strong></td>
+                            <td>Agribisnis, Hortikultura, Tanaman Pangan, PMIP</td>
+                            <td>Kawasan pertanian terpadu. (Bibit, sayuran, buah, pelatihan).</td>
+                            <td>Menghasilkan pendapatan dari penjualan hasil produksi & pelatihan.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Seed Teaching Farm (STEFA)</strong></td>
+                            <td>Teknologi Perbenihan</td>
+                            <td>Riset & produksi benih unggul (padi, hortikultura, melon, jagung).</td>
+                            <td>Kerjasama industri benih nasional & pusat riset benih.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Smart Farming TEFA</strong></td>
+                            <td>Perbenihan, Hortikultura, Pertanian Presisi</td>
+                            <td>Pertanian IoT (Monitoring otomatis, sensor kelembaban, irigasi).</td>
+                            <td>Mengintegrasikan teknologi digital di sektor pertanian modern.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4. Polinela Organic Farm (POF)</strong></td>
+                            <td>Produksi Tanaman Pangan</td>
+                            <td>Budidaya organik (Beras organik, sayuran, edamame).</td>
+                            <td>Sarana edukasi pertanian organik dan agrowisata kampus.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5. TEFA POLISE (Software House)</strong></td>
+                            <td>TRPL, Manajemen Informatika</td>
+                            <td>Pengembangan Web, Aplikasi Mobile, Sistem Informasi.</td>
+                            <td>Mahasiswa mengerjakan proyek nyata layaknya industri profesional.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>6. Teaching Industry LABTEPA</strong></td>
+                            <td>Teknologi Pangan</td>
+                            <td>Pengujian & analisis (Uji mikrobiologi, kualitas pangan).</td>
+                            <td>Melayani masyarakat/industri sekaligus tempat magang mahasiswa.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>7. TEFA Agroindustri (DIP Coffee)</strong></td>
+                            <td>Pengolahan Produk Agroindustri</td>
+                            <td>Pengolahan komersial (Bubuk kopi, olahan agroindustri).</td>
+                            <td>Meningkatkan nilai tambah hasil tani & pendapatan BLU.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>8. Teaching Factory POLIHIDRO</strong></td>
+                            <td>Teknologi Produksi Hortikultura</td>
+                            <td>Nutrisi & paket budidaya hidroponik.</td>
+                            <td>Mendukung inovasi pertanian modern berbasis teknologi.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>9. TOP Fruit's</strong></td>
+                            <td>Teknologi Perbenihan</td>
+                            <td>Bibit buah unggul (Durian, mangga, alpukat).</td>
+                            <td>Mendukung kebutuhan bibit unggul masyarakat & petani.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>10. TEFA Peternakan</strong></td>
+                            <td>Produksi Ternak</td>
+                            <td>Kandang sapi, kambing, domba, ayam close house, RPA.</td>
+                            <td>Pembelajaran berbasis industri peternakan modern & produksi.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>11. Teaching Factory Kelapa Sawit</strong></td>
+                            <td>PMIP</td>
+                            <td>Pembenihan, budidaya & pelatihan kelapa sawit.</td>
+                            <td>TEFA unggulan yang dikenal secara nasional.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Kesimpulan -->
     <footer class="footer-section">
         <div class="container">
-            <h2>"Polinela Jaya: Jembatan Usaha dan Karya."</h2>
-            <p>"Saya siap menjadi mitra Humas dalam memajukan citra prodi melalui pendekatan data yang profesional."</p>
+            <p class="conclusion-text">
+                "Polinela melalui sistem BLU dan Teaching Factory menghadirkan pembelajaran berbasis industri yang memungkinkan mahasiswa belajar, berinovasi, dan menghasilkan karya nyata. Melalui <strong>Career Path Finder</strong>, seluruh ekosistem unggul ini akan terpetakan dengan jelas bagi Calon Mahasiswa Baru."
+            </p>
+            <h2 style="margin-top: 30px; color: var(--primary-yellow);">Polinela Jaya: Jembatan Usaha dan Karya.</h2>
         </div>
     </footer>
 
+    <!-- Script Menu Mobile & Smooth Scroll -->
+    <script>
+        // Hamburger Menu Logic
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-menu li a").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+
+        // Smooth Scroll untuk Menu Anchor
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const headerOffset = 80;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
 </body>
 </html>
