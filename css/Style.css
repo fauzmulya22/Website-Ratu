@@ -1,8 +1,8 @@
-/* Variabel Warna Polinela (Hijau & Kuning) */
+/* Variabel Warna Polinela */
 :root {
-    --primary-green: #005b3f; /* Hijau Tua */
-    --secondary-green: #008f5a;
-    --primary-yellow: #fbc02d; /* Kuning Emas */
+    --primary-green: #016A87; 
+    --secondary-green: #016A87;
+    --primary-yellow: #fbc02d; 
     --text-dark: #333333;
     --text-light: #f4f7f6;
     --bg-light: #f9fbfb;
@@ -14,12 +14,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth; /* Smooth scroll default */
 }
 
 body {
     color: var(--text-dark);
     background-color: var(--bg-light);
     line-height: 1.6;
+    padding-top: 70px;
 }
 
 .container {
@@ -28,229 +30,116 @@ body {
     padding: 0 20px;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2.2rem;
-    color: var(--primary-green);
-    margin-bottom: 40px;
+/* --- NAVBAR --- */
+.navbar {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
-
-.section-title.left-align {
-    text-align: left;
+.nav-container {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 20px; max-width: 1100px; margin: 0 auto;
 }
-
-.text-white {
-    color: var(--white) !important;
+.nav-logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-green); text-decoration: none; }
+.nav-logo span { color: var(--primary-yellow); }
+.nav-menu { display: flex; list-style: none; gap: 20px; }
+.nav-menu li a {
+    text-decoration: none; 
+    color: #000000; 
+    font-weight: 600;
+    font-size: 0.9rem; 
+    transition: color 0.3s ease;
 }
+.nav-menu li a:hover { color: var(--secondary-green); }
+.hamburger { display: none; cursor: pointer; }
+.hamburger .bar { display: block; width: 25px; height: 3px; margin: 5px auto; background-color: var(--primary-green); transition: all 0.3s ease; }
 
-/* Hero Section */
-.hero-section {
-    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
-    color: var(--white);
-    padding: 100px 0;
-    text-align: center;
+/* --- SECTION UMUM --- */
+.section-title { text-align: center; font-size: 2.2rem; color: var(--primary-green); margin-bottom: 20px; }
+.section-title.left-align { text-align: left; }
+.section-desc { text-align: center; max-width: 800px; margin: 0 auto 40px auto; font-size: 1.05rem; }
+.text-white { color: var(--white) !important; }
+.text-center { text-align: center; }
+
+/* Hero */
+.hero-section { background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%); color: var(--white); padding: 100px 0; text-align: center; }
+.hero-content h1 { 
+    font-size: 2.8rem; 
+    margin-bottom: 15px; 
+    /* Pengaturan Gradasi Teks */
+    background: linear-gradient(90deg, #69f0ae, var(--primary-yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    color: var(--primary-yellow);
+.btn-primary { 
+    display: inline-block; 
+    /* Pengaturan Gradasi Background */
+    background: linear-gradient(90deg, #69f0ae, var(--primary-yellow)); 
+    color: var(--primary-green); 
+    padding: 12px 30px; 
+    text-decoration: none; 
+    font-weight: 700; 
+    border-radius: 30px; 
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
 }
-
-.hero-content .subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.profile-badge {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px 20px;
-    border-radius: 8px;
-    border-left: 4px solid var(--primary-yellow);
-    margin-bottom: 40px;
-}
-
-.profile-badge span {
-    display: block;
-}
-
-.profile-badge .name {
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-
-.btn-primary {
-    display: inline-block;
-    background-color: var(--primary-yellow);
-    color: var(--primary-green);
-    padding: 12px 30px;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 30px;
-    transition: transform 0.3s ease;
-}
-
 .btn-primary:hover {
     transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(105, 240, 174, 0.4);
 }
 
-/* Latar Belakang Section */
-.problem-section {
-    padding: 80px 0;
-    background: var(--white);
-}
+/* Cards Background & BLU */
+.problem-section { padding: 80px 0; background: var(--white); }
+.card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.card { background: var(--bg-light); padding: 30px; border-radius: 10px; border-top: 4px solid var(--primary-green); }
 
-.card-grid {
+.blu-section { padding: 80px 0; background: var(--bg-light); }
+.split-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.impact-box { background: var(--white); padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.impact-list li { margin-bottom: 10px; list-style-type: none; position: relative; padding-left: 25px; }
+.impact-list li::before { content: "✅"; position: absolute; left: 0; }
+
+/* --- MENU PRODI (BARU) --- */
+.prodi-section { padding: 80px 0; background: var(--white); }
+.prodi-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
-
-.card {
+.prodi-card {
     background: var(--bg-light);
-    padding: 30px;
-    border-radius: 10px;
-    border-top: 4px solid var(--primary-green);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-
-.card h3 {
-    margin-bottom: 15px;
-    color: var(--primary-green);
-}
-
-/* Solusi Section */
-.solution-section {
-    padding: 80px 0;
-    background: var(--primary-green);
-    text-align: center;
-}
-
-.section-desc {
-    font-size: 1.1rem;
-    margin-bottom: 40px;
-}
-
-.feature-list {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 40px;
-}
-
-.feature-item {
-    background: var(--white);
-    padding: 20px;
-    border-radius: 10px;
-    width: 200px;
-    color: var(--primary-green);
-}
-
-.feature-icon {
-    font-size: 2.5rem;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.value-prop {
-    display: inline-block;
-    background: var(--primary-yellow);
-    color: var(--primary-green);
-    padding: 10px 25px;
-    border-radius: 5px;
-}
-
-/* Kolaborasi Section */
-.collaboration-section {
-    padding: 80px 0;
-    background: var(--white);
-}
-
-.narrative {
-    text-align: center;
-    font-style: italic;
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-    color: #666;
     border-left: 4px solid var(--primary-yellow);
-    padding-left: 15px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.collab-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.collab-item {
     padding: 20px;
-    background: var(--bg-light);
     border-radius: 8px;
-    text-align: center;
+    transition: transform 0.3s;
 }
+.prodi-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.prodi-card h4 { color: var(--primary-green); margin-bottom: 10px; font-size: 1.1rem; }
+.prodi-card p { font-size: 0.9rem; color: #555; }
 
-.collab-item h4 {
-    color: var(--primary-green);
-    margin-bottom: 10px;
-}
-
-/* Keunggulan & Roadmap */
-.impact-roadmap-section {
+/* --- MENU APA ITU TEFA (BARU) --- */
+.info-tefa-section {
     padding: 80px 0;
-    background: var(--bg-light);
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.05"><circle cx="50" cy="50" r="40" fill="%23fff"/></svg>'), var(--primary-green);
+    background-size: cover;
 }
+.tefa-desc { font-size: 1.2rem; line-height: 1.8; max-width: 800px; margin: 0 auto; font-style: italic; }
 
-.split-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-}
+/* --- MENU JENIS TEFA --- */
+.tefa-section { padding: 80px 0; background: var(--bg-light); }
+.table-responsive { width: 100%; overflow-x: auto; }
+.tefa-table { width: 100%; border-collapse: collapse; background: var(--white); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.tefa-table th, .tefa-table td { padding: 15px; text-align: left; border-bottom: 1px solid #ddd; }
+.tefa-table th { background-color: var(--primary-green); color: var(--white); font-weight: 600; }
+.tefa-table tr:hover { background-color: #f1f7f5; }
+.tefa-table td strong { color: var(--secondary-green); }
 
-.impact-list li {
-    margin-bottom: 15px;
-    list-style-type: none;
-    position: relative;
-    padding-left: 25px;
-}
-
-.impact-list li::before {
-    content: "✨";
-    position: absolute;
-    left: 0;
-}
-
-.timeline-item {
-    background: var(--white);
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    border-left: 4px solid var(--primary-green);
-    border-radius: 0 5px 5px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-/* Footer Section */
-.footer-section {
-    background: var(--text-dark);
-    color: var(--primary-yellow);
-    text-align: center;
-    padding: 60px 0;
-}
-
-.footer-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.footer-section p {
-    color: var(--white);
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
+/* Footer */
+.footer-section { background: var(--primary-green); color: var(--white); text-align: center; padding: 60px 0; }
+.conclusion-text { font-size: 1.1rem; font-style: italic; max-width: 800px; margin: 0 auto; line-height: 1.8; }
